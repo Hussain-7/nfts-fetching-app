@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+.grid{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 10px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  /* zoom */
+  transform: scale(1.1);
+}
+
+.container {
+  padding: 2px 16px;
+}
